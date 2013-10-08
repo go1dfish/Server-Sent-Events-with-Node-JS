@@ -1,3 +1,25 @@
+node-http-proxy SSE failure example
+=============================
+
+
+node-http-proxy currently blocks SSE events; this example demonstrates the issue.
+
+Instructions
+---------------
+
+  npm install
+  npm start
+
+View http://localhost:8000 in chrome or safari. SSE's should periodically stream in.
+
+
+View http://localhost:9000 in chrome or safari.  This port is node-http-proxy, SSE's will not be received
+
+
+
+---------------
+
+
 Server Sent Events
 =============================
 
@@ -14,12 +36,3 @@ The example only works in Chrome and Safari.
 More information about SSEs can be found at http://www.html5rocks.com/tutorials/eventsource/basics/
 
 The code in this tutorial are extracted from the demo links at the bottom of the page.
-
-Running the examples
----------------------
-
-Assuming you have node installed:
-
-node server.js
-
-inside browser: localhost:8000/sse-node.html

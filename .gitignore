@@ -1,0 +1,9 @@
+npm-debug.log
+node_modules
+
+._*
+*.swp
+*.swo
+.DS_Store
+.Spotlight-V100
+.Trashes

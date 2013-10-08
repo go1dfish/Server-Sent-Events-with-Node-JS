@@ -1,0 +1,13 @@
+{
+  "name": "node-http-proxy-sse-example",
+  "version": "0.0.1",
+  "description": "Example of node-http-proxy failing at SSEs",
+  "main": "server.js",
+  "bin": {
+    "gatekeeper": "./server.js"
+  },
+  "dependencies": {
+    "http-proxy": "0.10.0"
+  },
+  "author": "Alex Goodwin <alex@iluminada.com>"
+}

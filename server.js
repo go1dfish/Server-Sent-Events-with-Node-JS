@@ -1,6 +1,7 @@
 var http = require('http');
 var sys = require('sys');
 var fs = require('fs');
+var httpProxy = require('http-proxy');
 
 http.createServer(function(req, res) {
   debugHeaders(req);
@@ -18,6 +19,10 @@ http.createServer(function(req, res) {
     res.end();
   }
 }).listen(8000);
+
+httpProxy.createServer(8000, 'localhost').listen(9000);
+
+
 
 
 function sendSSE(req, res) {

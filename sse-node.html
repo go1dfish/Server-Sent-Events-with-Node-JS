@@ -201,11 +201,6 @@ function updateConnectionStatus(msg, connected) {
 }
 
 source.addEventListener('message', function(e) {
-  if (e.origin != 'http://localhost:8000') {
-    alert('Origin was not http://localhost:8000');
-    return;
-  }
-
   logger.log('lastEventID: ' + (e.lastEventId || '--') +
              ', server time: ' + e.data, 'msg');
 }, false);
